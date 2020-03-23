@@ -20,3 +20,4 @@ for i in range(N-1):
             del l[-1]
         else :
             l[j]=l[j-1]+l[j+1]
+print(l[0])
