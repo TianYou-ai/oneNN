@@ -11,3 +11,12 @@ for i in range (N) :
         l.append(1)
     else:
         l.append(2)
+for i in range(N-1):
+    for j in range(N-1-i) :
+        if j==0:
+            l[j]=l[1]+l[1]
+        elif j==N-2-i :
+            l[j]=l[j-1]+l[j+1]
+            del l[-1]
+        else :
+            l[j]=l[j-1]+l[j+1]
