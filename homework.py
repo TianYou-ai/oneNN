@@ -4,3 +4,10 @@
 #a[k][1]=a[1][k]=2,k为偶数
 #a[i][j]=a[i-1][j]+a[i][j-1](2<=i,j<=N)
 #给定N的大小,试求该矩阵的最大元素值
+N=int(input())
+l=[]
+for i in range (N) :    
+    if i%2==0:
+        l.append(1)
+    else:
+        l.append(2)
